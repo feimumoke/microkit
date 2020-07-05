@@ -1,5 +1,12 @@
 ## golang学习工程
 
+--------------------
+### gin       gin框架
+### grpc_*    grpc/grpc-gateway，双向认证和单项认证、grpc_gateway提供http服务
+### kit_*     go kit，consul注册中心，hystrix熔断，限流，jwt
+### micro_*   go-micro/micro/go-plugins go语言微服务框架
+
+--------------------
 
 docker pull consul
 
