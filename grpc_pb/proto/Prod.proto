@@ -1,0 +1,34 @@
+syntax="proto3";
+
+package proc_pb.pb;
+import "google/api/annotations.proto";
+
+service ProdService {
+    rpc GetProdStock (ProdRequest) returns (ProdResponse){
+        option (google.api.http) = {
+         get: "/v1/prod/{prod_id}"
+        };
+    };
+
+    rpc GetProdStockList (QuerySize) returns (ProdResponseList){
+            option (google.api.http) = {
+             get: "/v1/prods/{size}"
+            };
+        };
+}
+
+message ProdRequest {
+    int32 prod_id = 1;
+}
+
+message ProdResponse {
+    int32 prod_stock = 1;
+}
+
+message QuerySize {
+int32 size=1;
+}
+
+message ProdResponseList{
+repeated ProdResponse prodres=1;
+}
