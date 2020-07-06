@@ -14,7 +14,7 @@ import (
 /**
 go run test.go -h
 go run test.go -name abc
- */
+*/
 
 func flagtest() {
 	name := flag.String("name", "", "服务名")

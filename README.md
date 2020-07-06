@@ -69,3 +69,26 @@ Signature ok
 subject=/C=cn/ST=beijing/L=beijing/O=tiger/OU=tiger/CN=localhost
 Getting CA Private Key
 -----------------------------
+
+
+## etcd
+docker pull bitnami/etcd:3
+docker-compose up -d
+docker ps
+docker exec -it [ID] sh
+  etcdctl get / --prefix --keys-only=true
+
+-------------------------
+## Micro
+micro --registry etcd --registry_address 192.168.100.26:2379 list services
+micro --registry etcd --registry_address 192.168.100.26:2379 get service test.tiger.com.test
+
+micro --registry etcd --registry_address 192.168.100.26:2379 call test.tiger.com.test TestService.Call "{\"id\":3}"
+
+curl -H "Content-Type:application/json" -X POST -d '{"jsonrpc":"2.0","method": "TestService.Call","params": [{"id": 3}]}' "http://192.168.100.26:8001"
+ 
+ ./apigw.sh
+ 
+ curl -H "Content-Type:application/json" -X POST -d '{"id": 3}' "http://192.168.100.26:8080/test/TestService/call
+ 
+ 

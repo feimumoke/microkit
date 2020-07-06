@@ -1,0 +1,12 @@
+
+syntax="proto3";
+package micro.service;
+import "google/api/annotations.proto";
+import "google/protobuf/timestamp.proto";
+
+message UserModel {
+    int32 user_id=1;
+    string username=2;
+    string user_pwd=3;
+    google.protobuf.Timestamp user_date=4;
+}

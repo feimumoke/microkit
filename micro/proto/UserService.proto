@@ -1,0 +1,14 @@
+syntax="proto3";
+package micro.service;
+import "google/api/annotations.proto";
+import "Models.proto";
+
+
+message RegResponse{
+    string status=1;
+    string message=2;
+}
+
+service UserService{
+    rpc UserReg(UserModel) returns(RegResponse);
+}
