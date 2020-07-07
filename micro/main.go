@@ -5,6 +5,7 @@ import (
 	"github.com/micro/go-micro/registry"
 	"github.com/micro/go-micro/registry/etcd"
 	"github.com/micro/go-micro/service/grpc"
+	_ "zhuhui.com/microkit/micro/appinit"
 	"zhuhui.com/microkit/micro/pb"
 	"zhuhui.com/microkit/micro/service"
 )
@@ -41,6 +42,7 @@ func grpcService() {
 	micro_service.RegisterTestServiceHandler(myService.Server(), new(service.TestServiceImpl))
 	myService.Run()
 }
+
 func main() {
 
 	microService()

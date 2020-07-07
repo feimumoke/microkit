@@ -91,4 +91,11 @@ curl -H "Content-Type:application/json" -X POST -d '{"jsonrpc":"2.0","method": "
  
  curl -H "Content-Type:application/json" -X POST -d '{"id": 3}' "http://192.168.100.26:8080/test/TestService/call
  
+ etcd管理台端口8082  
+ etcd registry 端口 8000
+ 
+ {"jsonrpc":"2.0","method":"Registry.Register","params":[{"name":"api.tiger.com.test","version":"1.0","endpoint":[],"nodes":[{"address":"192.168.100.26","id":"userservice-uuid","port":8088}]}],"id":1}
+ 
+ curl -H "Content-Type:application/json" -X POST -d '{"jsonrpc":"2.0","method":"Registry.Register","params":[{"name":"api.tiger.com.test","version":"1.0","endpoint":[],"nodes":[{"address":"192.168.100.26","id":"userservice-uuid","port":8088}]}],"id":1}' http://localhost:8000/
+ 
  

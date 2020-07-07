@@ -1,3 +1,58 @@
+POST http://192.168.100.26:8088/v1/users
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"黑白郎君","user_pwd": "hahaha"}
+
+<> 2020-07-08T121437.200.json
+
+###
+
+POST http://192.168.100.26:8088/v1/users
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"黑白郎君","user_pwd": "hahaha"}
+
+<> 2020-07-08T121102.200.txt
+
+###
+
+POST http://localhost:8080/test/UserService/UserReg
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"黑白郎君","user_pwd": "hahaha"}
+
+<> 2020-07-07T013019.200.json
+
+###
+
+POST http://localhost:8080/test/UserService/UserReg
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"黑白郎君","user_pwd": "hahaha"}
+
+<> 2020-07-07T013000.200.json
+
+###
+
+POST http://localhost:8080/test/UserService/UserReg
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"user_name":"黑白郎君","user_pwd": "hahaha"}
+
+<> 2020-07-07T012852.500.txt
+
+###
+
 POST http://localhost:8080/test/UserService/UserReg
 Accept: */*
 Cache-Control: no-cache
@@ -480,61 +535,6 @@ Content-Type: application/json
 {"size":8}
 
 <> 2020-07-05T100758-2.200.json
-
-###
-
-GET http://192.168.100.26:8001/v1/prod/900
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"size":8}
-
-<> 2020-07-05T100758-1.200.json
-
-###
-
-GET http://192.168.100.26:8001/v1/prod/900
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"size":8}
-
-<> 2020-07-05T100758.200.json
-
-###
-
-GET http://192.168.100.26:8001/v1/prod/900
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"size":8}
-
-<> 2020-07-05T100757-4.200.json
-
-###
-
-GET http://192.168.100.26:8001/v1/prod/900
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"size":8}
-
-<> 2020-07-05T100757-3.200.json
-
-###
-
-GET http://192.168.100.26:8001/v1/prod/900
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"size":8}
-
-<> 2020-07-05T100757-2.200.json
 
 ###
 
